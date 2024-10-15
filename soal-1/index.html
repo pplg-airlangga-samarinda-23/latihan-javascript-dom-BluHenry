@@ -7,9 +7,26 @@
     <p id="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi earum beatae officiis tenetur animi reprehenderit dolor. Soluta quos, architecto, porro itaque deserunt molestias laboriosam et tenetur sit eius praesentium voluptatum.</p>
 
     <button id="tombol">Tombol</button>
+    <button id="reset">reset</button>
+
 
     <script>
         // tambahkan fungsi yang mengubah warna paragraf menjadi biru ketika tombol ditekan
+        const paragraf = document.getElementById("paragraf");
+        const tombol = document.getElementById("tombol");
+        const Kembali = document.getElementById("reset");
+
+        // Menambahkan event listener 
+        tombol.addEventListener("click", function() {
+        paragraf.style.color = "blue";
+        });
+
+        // opsional reset
+        Kembali.addEventListener("click", function() {
+        paragraf.style.color = "black";
+        });
+
+
     </script>
 </body>
 </html>

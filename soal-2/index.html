@@ -5,12 +5,26 @@
 </head>
 <body>
     <p id="teks">Rekayasa Perangkat Lunak</p>
-    <button id="tombol">Tombol</button>
+    <button id="tombol">Tombol memperbesar teks</button> <br>
+    <button id="reset">Reset ukuran</button> <br>
 
     <script>
         // tambahkan skrip javascript di sini
+        const Teks = document.getElementById("teks");
+        const buttom = document.getElementById("tombol");
+        const Reset = document.getElementById("reset");
+
         // untuk mengubah ukuran dan warna dari teks
-        // "Rekayasa Perangkat Lunak"
+        buttom.addEventListener("click", function() {
+            Teks.style.fontSize = "24px"; // ngubah ukuran teks
+            Teks.style.color = "blue";     // Mengubah warna teks 
+        });
+
+        // Reset opsional (buat catatan)
+        Reset.addEventListener("click", function() {
+            Teks.style.fontSize = "16px"; // reset
+            Teks.style.color = "black";     // reset jadi hitam
+        });
 
         
     </script>
